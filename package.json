@@ -1,0 +1,15 @@
+{
+  "name": "aws-people-api",
+  "version": "1.0.0",
+  "description": "## [Try Me](https://xwsxni06n1.execute-api.us-west-1.amazonaws.com/V1/people)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dynamoose": "^3.2.0"
+  }
+}
