@@ -18,27 +18,23 @@ export const handler = async event => {
 	};
 
 	try {
-		//console.log("\n\nEVENT: ", event)
-
-		// parse the event body so it can be used for updating
-		let parsedEventBody = JSON.parse(event.body);
 		let id;
-		console.log('\n\nPARSED BODY:', parsedEventBody);
-		console.log('\n\nEVENT PATH:', event.pathParameters.id);
-
 		// if no id return
 		if (!event.pathParameters.id) {
 			return 'error: no id specified';
 		} else {
 			id = event.pathParameters.id;
 		}
+		// parse the event body so it can be used for updating
+
+		console.log('\n\nEVENT PATH:', id);
 
 		// pass in the body IN JSON FORMAT to update
-		let results = await people.update({ id: id }, parsedEventBody);
-		console.log('\n\n RESULTS FROM UPDATE', results);
+		let results = await people.delete(id);
+		console.log('\n\n RESULTS FROM DELETE', results);
 
 		// set response with results STRINGIFIED
-		response.body = JSON.stringify(results);
+		response.body = 'Success!';
 		response.statusCode = 200;
 	} catch (err) {
 		console.error(err);
