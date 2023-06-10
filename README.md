@@ -1,6 +1,12 @@
 # AWS People API
 
+- TASK: Create a serverless API using Amazong Web Services. Using AWS DynamoDB, API Gateway, and multiple Lambda functions I created an API that is deployed on amazon with a serverless infrastructure.
+
 ## [Try Me](https://xwsxni06n1.execute-api.us-west-1.amazonaws.com/V1/people)
+
+### LAB 18
+
+### Author: Ethan Storm
 
 ### Routes and Uses
 
@@ -13,5 +19,4 @@
 - DELETE /V1/people{id} - returns string
 
 - any extra values in posts and puts will be left off.
-
 ##### [Root URL](https://xwsxni06n1.execute-api.us-west-1.amazonaws.com/)
